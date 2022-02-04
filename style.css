@@ -39,21 +39,30 @@ body{
     width: 100%;
     display: block;
     border-radius: 2% 0 0 2%;
-
+    
 }
 h1{
     padding: 15% 15% 5%;
     font-size: 35px;
     color: var(--White_main_heading_stats);
 }
+.lol{
+    font-size: 35px;
+}
+.help{
+    font-size: 35px;
+}
 #insights{
     font-size: 35px;
     color: var(--Softviolet_accent);
 }
-p{  display: flex;
+p {  
     padding-left: 15%;
     line-height: 25px;
     color: var(--Slightlytransparentwhite_main_paragraph);
+}
+p > span, .st2{
+    display: block;
 }
 .stats{
     padding: 15%;
@@ -112,5 +121,123 @@ p{  display: flex;
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media only screen and (max-width: 375px){
+    body{
+        width: 375px;
+        background-color: var(--Verydarkblue_mainbackground);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    #wrapper{
+        width: 90%;
+        height: auto;
+        display: block;
+        position: relative;
+    }
+    .attribution { font-size: 11px; 
+        text-align: center; 
+        bottom: 0;
+        width: 75%;
+        visibility: hidden;
+    }
+    #card{
+        display: block;
+        width: 80vw;
+        margin: auto;
+        margin-top: 35vh;
+        margin-bottom: 10vh;
+    }
+    .contain{
+        background-color: var(--Darkdesaturatedblue_cardbackground);
+        width: 100%;
+        display: block;
+        text-align: center;
+        border-radius: 0% 0 2% 2%;
     
+    }
+    .image {
+        display: flex;
+        position: absolute;
+        top: 0;
+        transform: translate(0, -100%);
+        
+    }
+    .image img{
+        border-radius: 2% 2% 0% 0;
+        width: 100%;
+        
+        
+    }
+    .image::after{
+        content: '';
+        background-color: var(--Softviolet_accent);
+        /* height: 100%; */
+        width: 100%;
+        /* position: absolute; */
+        opacity: 0.7;
+        border-radius: 2% 2% 0% 0;
+    }
+    .stats{
+        
+        color: var(--White_main_heading_stats);
+        display: block;
+        padding-left: 25%;
+    
+    }
+    h1{
+        display: block;
+        padding: 10% 5% 5%;
+        font-size: 25px;
+        color: var(--White_main_heading_stats);
+    }
+    #insights{
+        font-size: 25px;
+        color: var(--Softviolet_accent);
+    }
+    .help{
+        display: block;
+        font-size: 25px;
+    }
+    p{
+        padding: 5% 5% 0 ;
+        line-height: 25px;
+        color: var(--Slightlytransparentwhite_main_paragraph);
+        display: block;
+      
+    }
+    .lol{
+        font-size: 25px;
+        display: block;
+    }
+    .companies{
+        padding:5% 0;
+    }
+    .templates{
+        padding:5% 0;
+    }
+    .queries{
+        padding:5% 0;
+    }
+
+    p > span{
+        display: inline;
+    }
+    .lower{
+        display: flex;
+        justify-content: center;
+        color: var(--Slightly_transparent_white_stat_headings);
+        text-transform: uppercase;
+        line-height: 35px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .upper{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: 700;
+    }
+  
 }
